@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,300;1,400&display=swap");
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.date {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  font-size: 8rem;
+  margin: 0 30px;
+}
+
+.amPm {
+  font-size: 2rem;
+}
+
+.seconds {
+  align-items: flex-end;
+}
+
+.weather {
+  height: 40px;
+}
