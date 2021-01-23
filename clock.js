@@ -12,15 +12,19 @@ function getTime() {
     year = today.getFullYear(),
     month = today.getMonth() + 1,
     date = today.getDate(),
-    week = new Array("SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"),
+    week = new Array(
+      "일요일",
+      "월요일",
+      "화요일",
+      "수요일",
+      "목요일",
+      "금요일",
+      "토요일"
+    ),
     day = week[today.getDay()],
-    hours = getHours > 12 ? getHours - 12 : getHours;
-  if (getHours < 12) {
-    amPmTitle.innerText = "AM";
-  } else {
-    amPmTitle.innerText = "PM";
-  }
-
+    hours =
+      getHours > 12 ? getHours - 12 : getHours === 0 ? getHours + 12 : getHours;
+  amPmTitle.innerText = getHours < 12 ? "오\n전" : "오\n후";
   dateTitle.innerText = `${year}. ${month < 10 ? `0${month}` : month}. ${
     date < 10 ? `0${date}` : date
   } ${day}`;
