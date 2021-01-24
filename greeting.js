@@ -25,6 +25,14 @@ function paintGreeting(text) {
   form.classList.remove(SHOWING_UN);
   greeting.classList.add(SHOWING_UN);
   greeting.innerText = `환영합니다 ${text}님`;
+  paintToDoList();
+}
+
+function paintToDoList() {
+  const toDoForm = document.querySelector(".toDoForm");
+  const toDo = document.querySelector(".toDo");
+  toDoForm.classList.add(SHOWING_UN);
+  toDo.classList.add(SHOWING_UN);
 }
 
 function loadName() {
