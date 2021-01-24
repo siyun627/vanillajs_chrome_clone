@@ -88,15 +88,30 @@ h3 {
 
 .greeting {
   margin: 10px;
+  font-size: 1.5rem
 }
 
+.toDo, .toDoForm {
+  display: none;
+}
+
+.greetingForm,
+.greeintg {
+  display: none;
+}
+
+
+.showing {
+  display: block;}
+  
 .toDoForm {
   display: flex;
   justify-content: center;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 30px 0px;
   opacity: 0.7;
   border: none;
 }
+
 
 .toDo {
   display: flex;
@@ -117,18 +132,4 @@ button {
   opacity: 0.7;
   font-size: 4px;
   margin: 0px 10px;
-}
-
-
-.greetingForm,
-.greeintg {
-  display: none;
-}
-
-.toDo, .toDoFOrm {
-  display: none;
-}
-
-.showing {
-  display: block;
 }
