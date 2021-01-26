@@ -29,10 +29,10 @@ function paintGreeting(text) {
 }
 
 function paintToDoList() {
-  const toDoForm = document.querySelector(".toDoForm");
   const toDo = document.querySelector(".toDo");
-  toDoForm.classList.add(SHOWING_UN);
-  toDo.classList.add(SHOWING_UN);
+  const toDoForm = document.querySelector(".toDoForm");
+  toDo.classList.remove("unshown");
+  toDoForm.classList.remove("unshown");
 }
 
 function loadName() {
